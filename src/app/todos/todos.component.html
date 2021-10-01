@@ -1,0 +1,7 @@
+<button routerLink="/detalhes-usuario">Ir para detalhes do usuário</button>
+
+<ul>
+  <li *ngFor="let todo of todos$ | async">
+    {{ todo.title }}
+  </li>
+</ul>

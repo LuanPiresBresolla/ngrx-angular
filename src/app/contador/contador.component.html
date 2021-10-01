@@ -1,0 +1,9 @@
+<h1>{{counter$ | async }}</h1>
+
+<button type="button" (click)="incrementaContador()">Incrementar</button>
+<button type="button" (click)="decrementaContador()">Decrementar</button>
+
+<app-display-contador></app-display-contador>
+
+<input #inputContador type="text" placeholder="Valor do counter">
+<button (click)="definirContador(inputContador.value)">Alterar</button>
